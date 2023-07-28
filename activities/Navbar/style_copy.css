@@ -1,0 +1,12 @@
+h1, h2, h3, h4, h5, h6 {
+color: #efff11;
+font-weight: 300;
+-webkit-text-stroke: .5px #dbf0ef;
+}
+
+body{background-image: url(/images/pexels-cottonbro-studio-4709822.jpg)}
+
+p {
+    color: #f7f1f1;
+    font-size:medium;
+}

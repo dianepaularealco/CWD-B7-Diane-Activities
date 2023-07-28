@@ -1,0 +1,9 @@
+h1, h2, h3, h4, h5, h6 {
+color: #e57373;
+font-weight: 200;
+}
+
+p, blockquote {
+    color: #616161;
+    font-size: medium;
+}

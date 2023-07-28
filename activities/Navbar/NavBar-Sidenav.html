@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/a055af067f.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style_copy.css">
+    <title>NavBar and SideNav</title>
+        
+</head>
+<body>
+    <div class="navbar-fixed">
+    <nav class="pink accent-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo black-text">
+                    <i class="fa-solid fa-headphones-simple fa-beat"></i>
+                    The Music Bar
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown1">
+                            <i class="material-icons">arrow_drop_down</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li>
+            <a href="#spotify">Spotify</a>
+        </li>
+        <li>
+            <a href="#soundcloud">Soundcloud</a>
+        </li>
+        <li>
+            <a href="#napster">Napster</a>
+        </li>
+        <li>
+            <a href="#itunes">iTunes</a>
+        </li>
+        <li>
+            <a href="#google">Google</a>
+        </li>
+    </ul>
+    <h1 class="center">Nav Bar</h1>
+    <div class="divider"></div>
+    <div class="container">
+    <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+    
+    <!-- Right-aligned links -->
+    <br id="spotify"><br>
+    <h3>Right Aligned Links</h3>
+    <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+    <nav class="grey darken-3">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo green-text">
+                    <i  class="fa-brands fa-spotify green-text"></i>
+                    Spotify
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Left-aligned links -->
+    <br id="soundcloud"><br>
+    <h3>Left Aligned Links</h3>
+    <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+    <nav class="orange">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right black-text">
+                    <i  class="fa-brands fa-soundcloud black-text"></i>
+                    SoundCloud
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <a href="" class="black-text">Home</a>
+                    </li>
+                    <li>
+                        <a href="" class="black-text">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="black-text">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Centering the logo -->
+    <br id="napster"><br>
+    <h3>Centering the logo</h3>
+    <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.</p>
+    <nav class="light blue darken-4">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center white-text">
+                    <i  class="fa-brands fa-napster white-text"></i>
+                    Napster
+                </a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Active Items -->
+    <br id="itunes"><br>
+    <h3 >Active Items</h3>
+    <p>Add active class to your li tags to denote the current page.
+    </p>
+    <nav class="purple darken-1">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo  white-text">
+                    <i  class="fa-brands fa-itunes-note white-text"></i>
+                    iTunes
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Extended Navbar with Tabs -->
+    <br id="google"><br>
+        <h3>Extended Navbar with Tabs</h3>
+        <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+        </p>
+        <nav class="red nav-extended">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="" class="brand-logo  white-text">
+                        <i  class="fa-brands fa-google white-text"></i>
+                        Google
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active">
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab">
+                        <a href="#facebook">Facebook</a></li>
+                    <li class="tab">
+                        <a href="#twitter">Twitter</a></li>
+                    <li class="tab">
+                        <a href="#instagram">Instagram</a></li>
+                    <li class="tab">
+                        <a href="#youtube">YouTube</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Sidenav Structure -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+
+        <!-- Tabs Structure -->
+        <div class="row center">
+            <div class="col s12" id="facebook">
+                <div class="card-panel">
+                <i class="fa-brands fa-facebook large indigo-text text-darken-2"></i>
+                <p class="black-text" style="text-align: left;">Facebook is an online social media and social networking service owned by American technology giant Meta Platforms.</p>
+                </div> 
+                <div class="card-panel">          
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/Facebook-stock-photo-6.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/126948832.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="images/25-amazing-facts-about-facebook-5f08549c55fa6-384x202.png" alt="">
+                            </li>
+                            <li>
+                                <img src="images/Screen_of_Facebook_(2).png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="twitter">
+                <div class="card-panel">
+                    <i class="fa-brands fa-twitter large blue-text"></i>
+                    <p class="black-text" style="text-align: left;"> Twitter is an online social media and social networking service owned and operated by American company X Corp., the successor of Twitter, Inc.</p>
+                </div>
+                <div class="card-panel">          
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/download (1).jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/how-recommendations-help-discover-more-twitter-1.jpg.img.fullhd.medium.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/how-recommendations-help-discover-more-twitter-1.jpg.img.fullhd.medium.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/2023-01-25T171315Z_139028715_RC279Y9K11I3_RTRMADP_3_USA-ANTISEMITISM-FUENTES-TWITTER.webp" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="instagram">
+                <div class="card-panel">
+                    <i class="fa-brands fa-instagram large purple-text"></i>
+                    <p class="black-text" style="text-align: left;">Instagram is a photo and video sharing social networking service owned by American company Meta Platforms.</p>
+                </div>
+                <div class="card-panel">          
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/download.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/03_Candid-1.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="images/IG-Messaging-Stories-Bundle_Header.webp" alt="">
+                            </li>
+                            <li>
+                                <img src="images/Instagram-names-for-girls-and-boys-1200x900.webp" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12" id="youtube">
+                <div class="card-panel">
+                    <i class="fa-brands fa-youtube large red-text"></i>
+                    <p class="black-text" style="text-align: left;">YouTube is an American online video sharing and social media platform headquartered in San Bruno, California, United States. Accessible worldwide, it was launched on February 14, 2005, by Steve Chen, Chad Hurley, and Jawed Karim.</p>
+                </div>
+                <div class="card-panel">        
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/wagtailvideo-fjhr9sui_thumb.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/yt_1200.png" alt="">
+                            </li>
+                            <li>
+                                <img src="images/youtube-premium-inside-app-logo.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/YouTube_homepage.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
+    <div style="height: 1000px;"></div>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function(){
+            //tabs init
+            $('.tabs').tabs();
+            //sidenav init
+            $('.sidenav').sidenav({
+                edge: 'right',
+                induration: 1000,
+                outduration: 1000
+            });
+            //dropdown init
+            $('.dropdown-trigger').dropdown();
+                    // materialboxed Init
+        $('.materialboxed').materialbox({
+            inDuration:1000,
+            outDuration: 1000
+        });
+    
+        // slider init
+        $('.slider').slider({
+            indicators:false,
+            height: 400,
+            duration: 1000,
+            interval:1000
+        });
+        });
+    </script>
+
+
+</body>
+</html>
